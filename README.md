@@ -25,6 +25,8 @@ Those monster generics declarations just to introduce an explaining variable:
 
 No semi-colons.  Unlike JavaScript where you don't need semi-colons but should add them, in Scala there's no real benefit to adding them.
 
+We'll delve into some more good stuff later.
+
 How do I set it up?
 ===================
 
@@ -33,6 +35,8 @@ Go to http://typesafe.com/stack/download , tick to accept the terms and submit, 
 While you're there you can download the Scala IDE, which is a prepackaged version of Eclipse with the Scala plugins installed.  As always with Eclipse it doesn't need installing, only unpacking.
 
 The IntelliJ IDEA plugin wasn't working for me at the time of writing, probably because I'm on an IDEA alpha version.  There's a plugin for Netbeans too, but I haven't tried it, and there are modes for vim and emacs.
+
+It also works with maven, here's a guide that assumes you know neither Scala nor Maven: http://www.scala-lang.org/node/345 - if you're already familiar with Maven find what you need quickly by searching for org.scala repeatedly in that page.  This tutorial doesn't need maven though.
 
 Hello World
 ===========
@@ -46,3 +50,8 @@ Open the Scala IDE.  Create a new Scala Project, and start typing into a new Sca
 Note there's no static, everything static needs to go in an 'object', which behaves like a class that only contains static methods except it's actually an instance that gets created automatically.
 
 App is a trait (like an interface) that exists just to make sure the object can be executed as if it were a Java main class, but we don't need to implement a main method, we can just place the statements in the object's body.
+
+What Next
+=========
+
+We'll cover a number of topics hand-picked to get you up to speed quickly, but for more background there are a lot of good free resources linked to from the Scala wiki in Stack Overflow - http://stackoverflow.com/tags/scala/info
