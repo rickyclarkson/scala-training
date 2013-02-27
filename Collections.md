@@ -33,3 +33,19 @@ You can convert from one collection type to another by using the 'to' method:
 println(List(3, 4).to[Vector]) // Vector(3, 4)
 println(Vector(3, 5, 3).to[Set]) // Set(3, 5) or Set(5, 3)
 ```
+
+Maps have a nice initialisation syntax (I say syntax but it's all library code):
+
+```scala
+val german = Map(0 -> "null", 1 -> "ein", 2 -> "zwei", 3 -> "drei")
+println(german(1))
+```
+
+The mutable collections generally mirror the immutable ones, but often have Buffer in their name, like String and StringBuffer in Java:
+
+```scala
+import scala.collection.mutable.ListBuffer
+val changeMe = ListBuffer("hello", "world")
+changeMe.insert(1, "cruel")
+println(changeMe) // ListBuffer(hello, cruel, world)
+```
