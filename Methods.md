@@ -1,6 +1,8 @@
 Methods
 =======
 
+A few examples of various kinds of methods:
+
 ```scala
 object MethodExamples {
   def noArgsNoResult {
@@ -38,5 +40,19 @@ def firstNumberWhoseSquareIsAbove500: Int = {
     if (x * x > 10)
       return x
     x += 1 //no x++ here, we use ++ to join two collections instead.
+  }
 }
 ```
+
+Exercises
+========
+
+1. Define a method that takes three Ints as parameters, and returns the smallest.
+
+2. Define a method that takes no parameters and prints out the value of System.currentTimeMillis.
+
+3. Define a method that takes in a value of any type and returns that value.  I should be able to use it as: val three: Int = identity(3) and val hello = identity("hello")
+
+What Next
+========
+[Looping](Looping.md)
