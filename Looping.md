@@ -55,7 +55,7 @@ Exercises
 
    It doesn't matter if you print them out next to each other or on separate lines.
 
-Next
-====
+What Next
+=========
 
 Let's zip along to [pattern-matching](Patterns.md).
