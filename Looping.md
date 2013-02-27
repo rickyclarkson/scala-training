@@ -51,6 +51,6 @@ Exercises
 
 2. Write a program that, for the numbers from 1 to 100, prints Fizz if the number is a multiple of 3, Buzz if it's a multiple of 5, FizzBuzz if it's a multiple of both, or the number itself otherwise.  Here's 1 to 17 as an example:
 
-1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, Buzz, 11, Fizz, 13, 14, FizzBuzz, 16, 17
+   1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, Buzz, 11, Fizz, 13, 14, FizzBuzz, 16, 17
 
-It doesn't matter if you print them out next to each other or on separate lines.
+   It doesn't matter if you print them out next to each other or on separate lines.
