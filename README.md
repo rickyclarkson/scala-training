@@ -11,7 +11,7 @@ More and more clients are asking for Scala programmers, because it is an interes
 What does it look like?
 =======================
 
-Those classes in your code that have lots of getters (and possibly setters), some fields backing them, maybe a constructor that copies its parameters to fields,an equals/hashCode implementation, a toString, here's what they look like in Scala:
+Those classes in your code that have lots of getters (and possibly setters), some fields backing them, maybe a constructor that copies its parameters to fields, an equals/hashCode implementation, a toString, here's what they look like in Scala:
 
 ```scala
 case class Employee(id: Int, name: String, role: Role)
@@ -23,7 +23,7 @@ The callbacks that infest most client-side Java development and some server-side
 button addActionListener (e => println("An event happened"))
 ```
 
-Those monster generics declarations just to introduce an explaining variable:
+Those monster generics declarations just to introduce an explaining variable for a list of maps of strings to strings.. gone:
 
 ```scala
 val foo = someCall(args) // you can specify the type if you like
