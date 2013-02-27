@@ -91,4 +91,4 @@ Exercises
 What Next
 =========
 
-[Collections](Collections)
+[Collections](Collections.md)
