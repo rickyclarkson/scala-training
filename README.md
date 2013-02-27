@@ -11,7 +11,7 @@ More and more clients are asking for Scala programmers, because it is an interes
 What does it look like?
 =======================
 
-Those classes in your code that have lots of getters (and possibly setters), some fields backing them, maybe a constructor that copies its parameters to fields,an equals/hashCode implementation, a toString, here's what it looks like in Scala:
+Those classes in your code that have lots of getters (and possibly setters), some fields backing them, maybe a constructor that copies its parameters to fields,an equals/hashCode implementation, a toString, here's what they look like in Scala:
 
 ```scala
 case class Employee(id: Int, name: String, role: Role)
@@ -36,13 +36,13 @@ We'll delve into some more good stuff later.
 How do I set it up?
 ===================
 
-Go to http://typesafe.com/stack/download , tick to accept the terms and submit, then choose a way of installing depending on your OS.  Note that the Windows one should work without being an administrator, just choose somewhere you can write to.
+Go to http://typesafe.com/stack/download , tick to accept the terms and submit, then choose a way of installing depending on your OS.  Note that the Windows download should work without being an administrator, just choose somewhere you can write to.
 
 While you're there you can download the Scala IDE, which is a prepackaged version of Eclipse with the Scala plugins installed.  As always with Eclipse it doesn't need installing, only unpacking.
 
 The IntelliJ IDEA plugin wasn't working for me at the time of writing, probably because I'm on an IDEA alpha version.  There's a plugin for Netbeans too, but I haven't tried it, and there are modes for vim and emacs.
 
-It also works with maven, here's a guide that assumes you know neither Scala nor Maven: http://www.scala-lang.org/node/345 - if you're already familiar with Maven find what you need quickly by searching for org.scala repeatedly in that page.  This tutorial doesn't need maven though.
+It also works with maven, here's a guide that assumes you know neither Scala nor Maven: http://www.scala-lang.org/node/345
 
 Hello World
 ===========
@@ -58,6 +58,11 @@ object Main extends App {
 Note there's no static, everything static needs to go in an 'object', which behaves like a class that only contains static methods except it's actually an instance that gets created automatically.
 
 App is a trait (like an interface) that exists just to make sure the object can be executed as if it were a Java main class, but we don't need to implement a main method, we can just place the statements in the object's body.
+
+Exercises
+========
+
+None this time, just get the Typesafe Stack and Scala IDE, and make sure the above Hello World works for you.
 
 What Next
 =========
