@@ -52,7 +52,7 @@ println(german match {
 })
 ```
 
-We can even match over Arrays:
+We can even match over Arrays and other collections:
 
 ```scala
 val actual = Array(3, 10, 12)
@@ -63,15 +63,6 @@ actual match {
 val actual = Array(3, 10, 12)
 val Array(x, y, z) = actual //alternative syntax, pattern-matching in a declaration, creating 3 variables.
 println(x + y * z)
-```
-
-We can write recursive operations on Lists (Lists are single-linked lists, i.e., a non-empty list has a value and a tail, where the tail is a List):
-
-```scala
-def sum(list: List[Int]): Int = list match {
-  case Nil => 0 // if it's an empty list, give 0
-  case value :: tail => value + sum(tail) // if it's a value and a tail, add the value to the result of summing the tail
-}
 ```
 
 You can use it to replace instanceof and casts, though this has most of the same problems as instanceof and casts:
@@ -114,3 +105,15 @@ println(number match {
 ```
 
 Pattern-matching has some more to it, but we probably won't need any more than this.
+
+Exercises
+=========
+
+1. Write a method that, given a val requestUrl: String containing one of "/index.html", "/currentTimeMillis.html" or any other text, gives a sensible minimal snippet of HTML for index.html, HTML showing the current time in milliseconds (System.currentTimeMillis), or some kind of 404-style response for any other text.
+
+2. Adapt that method so that /index.html and /contents.html are handled identically.
+
+What Next
+=========
+
+[Lambdas](Lambdas.md)
