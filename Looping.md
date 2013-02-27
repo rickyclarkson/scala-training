@@ -54,3 +54,8 @@ Exercises
    1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, Buzz, 11, Fizz, 13, 14, FizzBuzz, 16, 17
 
    It doesn't matter if you print them out next to each other or on separate lines.
+
+Next
+====
+
+Let's zip along to [pattern-matching](Patterns.md).
