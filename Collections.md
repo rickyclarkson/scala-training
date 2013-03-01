@@ -49,3 +49,11 @@ val changeMe = ListBuffer("hello", "world")
 changeMe.insert(1, "cruel")
 println(changeMe) // ListBuffer(hello, cruel, world)
 ```
+
+Exercises
+=========
+
+What Next
+=========
+
+[Generics](Generics.md)
